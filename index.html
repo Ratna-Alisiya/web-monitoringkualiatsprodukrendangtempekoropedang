@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kualitas Produk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cek Kualitas Produk Anda</h1>
+        <p>Pilih warna label indikator di kemasan Anda:</p>
+
+        <div class="button-group">
+            <button class="color-button red" onclick="showResult('Sangat Layak', 'Rp 25.000')">Merah Kecoklatan</button>
+            <button class="color-button orange" onclick="showResult('Masih Layak', 'Rp 15.000')">Kuning Kemerahan</button>
+            <button class="color-button yellow" onclick="showResult('Kurang Layak', 'Rp 8.000')">Kuning Terang</button>
+        </div>
+
+        <div id="result" class="result-card hidden">
+            <h2 id="quality"></h2>
+            <p id="price"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
